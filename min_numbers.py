@@ -19,6 +19,7 @@ a = 2
 b = 1
 c = 3
 d = 3
+print_min(10,20)
 
 min_local = find_min(find_min(a,b),find_min(c,d))
 
