@@ -12,8 +12,6 @@ b = 1
 c = 3
 d = 3
 
-min_local1 = find_min(a,b)
-min_local2 = find_min(c,d)
-min_local = find_min(min_local1,min_local2)
+min_local = find_min(find_min(a,b),find_min(c,d))
 
 print(min_local)
