@@ -7,6 +7,14 @@ def find_min(x,y):
     else:
         return y
 
+def print_min(x, y):
+    if x < y:
+            mymin = x
+    else:
+            mymin = y
+
+print("mymin =", mymin)
+
 a = 2
 b = 1
 c = 3
