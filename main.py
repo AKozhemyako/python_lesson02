@@ -1,16 +1,22 @@
-# This is a sample Python script.
+import tasks_cycle, constant
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+constant.PI = 8
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+while True:
+    print("------------MENU----------")
+    print("1. print 10 positive value")
+    print("2. calc power from console")
+    print("3. calc power")
+    print("0. Exit")
+    print("--------------------------")
+    answer = int(input("enter choice"))
+    if answer == 0:
+        break;
+    elif answer == 1:
+        tasks_cycle.print_10_positive()
+    elif answer == 2:
+        tasks_cycle.calc_power_value_from_console()
+    elif answer == 3:
+        print(tasks_cycle.pow(3,2))
+    else:
+        print("Wrong choice, try again.")
